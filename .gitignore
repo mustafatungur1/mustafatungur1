@@ -1,0 +1,5 @@
+.venv/
+assets/photo.jpeg
+assets/portrait_prepped.png
+__pycache__/
+.DS_Store
