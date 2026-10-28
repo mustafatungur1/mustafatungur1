@@ -1,12 +1,9 @@
 <div align="center">
 
-<img src="./contrib-heatmap.svg" width="860" alt="Katkı ısı haritası" />
+<img src="./hero.svg" width="860" alt="Merhaba, ben Mustafa Tungur — e-ticaret, dijital pazarlama, otomasyon" />
 
-<table>
-  <tr>
-    <td valign="top"><img src="./ascii-portrait.svg" width="440" alt="Mustafa — ASCII portre" /></td>
-    <td valign="top"><img src="./info-card.svg" width="410" alt="neofetch bilgi kartı" /></td>
-  </tr>
-</table>
+<img src="./contrib-city.svg" width="860" alt="Son 12 aydaki GitHub katkıları, izometrik şehir olarak" />
+
+<img src="./stack.svg" width="860" alt="Neyle kuruyorum: Laravel, Meta ve Google Ads, video üretimi, yapay zekâ, Mama Keyfi" />
 
 </div>

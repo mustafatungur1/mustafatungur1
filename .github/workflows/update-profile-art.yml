@@ -18,8 +18,8 @@ jobs:
           python-version: "3.12"
       - run: pip install -r scripts/requirements.txt
       - run: python scripts/fetch_contributions.py ${{ github.repository_owner }} data/contributions.json
-      - run: python scripts/render_heatmap_svg.py data/contributions.json contrib-heatmap.svg
+      - run: python scripts/render_city_svg.py data/contributions.json contrib-city.svg
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: katkı haritası güncellendi [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg"
+          file_pattern: "data/contributions.json contrib-city.svg"

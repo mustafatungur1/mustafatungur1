@@ -26,16 +26,16 @@ LINE_DUR = 0.35       # bir satırın yazılma süresi (sn)
 LINE_GAP = 0.06       # satırlar arası gecikme (sn)
 
 
-def to_ascii(path: str) -> list[str]:
+def to_ascii(path: str, cols: int = COLS, char_w: float = CHAR_W, line_h: float = LINE_H, ramp: str = RAMP) -> list[str]:
     img = Image.open(path).convert("LA")
     w, h = img.size
     # Karakterler kare değil: yüksekliği 0.6/1.0 oranında sıkıştır
-    rows = int(h / w * COLS * (CHAR_W / LINE_H))
-    arr = np.asarray(img.resize((COLS, rows), Image.LANCZOS), dtype=np.float32) / 255.0
+    rows = int(h / w * cols * (char_w / line_h))
+    arr = np.asarray(img.resize((cols, rows), Image.LANCZOS), dtype=np.float32) / 255.0
     lum, alpha = arr[..., 0], arr[..., 1]
     lum = (lum - lum[alpha > 0.5].min()) / max(np.ptp(lum[alpha > 0.5]), 1e-6)  # kontrastı kişiye yay
-    idx = (lum.clip(0, 1) * (len(RAMP) - 1)).round().astype(int)
-    lines = ["".join(RAMP[i] if a > 0.5 else " " for i, a in zip(r, ar)).rstrip()
+    idx = (lum.clip(0, 1) * (len(ramp) - 1)).round().astype(int)
+    lines = ["".join(ramp[i] if a > 0.5 else " " for i, a in zip(r, ar)).rstrip()
              for r, ar in zip(idx, alpha)]
     while lines and not lines[0].strip():
         lines.pop(0)
