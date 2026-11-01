@@ -1,44 +1,9 @@
 {
  "user": "mustafatungur1",
- "total": 3185,
- "current_streak": 4,
+ "total": 3176,
+ "current_streak": 5,
  "longest_streak": 13,
  "days": [
-  {
-   "date": "2025-10-26",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-27",
-   "level": 1,
-   "count": 2
-  },
-  {
-   "date": "2025-10-28",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-29",
-   "level": 0,
-   "count": 0
-  },
-  {
-   "date": "2025-10-30",
-   "level": 1,
-   "count": 6
-  },
-  {
-   "date": "2025-10-31",
-   "level": 1,
-   "count": 2
-  },
-  {
-   "date": "2025-11-01",
-   "level": 0,
-   "count": 0
-  },
   {
    "date": "2025-11-02",
    "level": 0,
@@ -1856,6 +1821,11 @@
   },
   {
    "date": "2026-10-31",
+   "level": 1,
+   "count": 1
+  },
+  {
+   "date": "2026-11-01",
    "level": 0,
    "count": 0
   }
