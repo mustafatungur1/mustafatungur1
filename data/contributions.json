@@ -1,7 +1,7 @@
 {
  "user": "mustafatungur1",
- "total": 3156,
- "current_streak": 6,
+ "total": 3157,
+ "current_streak": 7,
  "longest_streak": 13,
  "days": [
   {
@@ -1846,6 +1846,11 @@
   },
   {
    "date": "2026-11-12",
+   "level": 1,
+   "count": 1
+  },
+  {
+   "date": "2026-11-13",
    "level": 0,
    "count": 0
   }
